@@ -6,9 +6,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: vh;
+  min-height: 100vh;
   margin: 0;
   width: 100%;
+  padding: 0;
 }
 
 header {
@@ -62,7 +63,7 @@ h1 {
 }
 
 input[type="number"] {
-  width: 60%;
+  width: 50%;
   padding: 10px;
   border: none;
   border-radius: 9px;
@@ -90,7 +91,7 @@ button:hover {
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
-  width: 100%;
+  width: auto;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   color: #eee;
@@ -102,7 +103,7 @@ nav {
   background-color: black;
   padding: 10px;
   text-align: center;
-  width: 100%;
+  width: auto;
 }
 
 nav ul {
@@ -128,10 +129,10 @@ nav a:hover {
 }
 
 .transactions-table {
-  width: 100%;
-  margin: 20px 20px;
-  padding: 20px 10px;
-  border-radius: 100px;
+  width: auto;
+  margin: 10px ;
+  padding: 10px ;
+  border-radius: 10px;
   color: whitesmoke;
 }
 
@@ -140,36 +141,28 @@ nav a:hover {
   text-align: center;
   background-color: #444;
   border-radius: 10px;
+  width: auto;
 }
 
 .transactions-table table {
-  width: 100%;
+  padding: 10px 10px;
   background-color:  #af4c4c;
-  border-radius: 10px;
+  border-radius: 30px;
+  width: auto;
 }
 
 
 
 .image-container {
   position: relative;
-}
-
-.image-text {
-  position: absolute;
-  top: 90%;
-  left: 113%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 17px;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 8px;
-  font-family: 'Courier New', Courier, monospace;
+  width: auto;
 }
 
 .funds {
   background-color: yellow;
   margin-top: 70px;
   margin-bottom: 70px;
+  width: auto;
 }
 
 .contact {
@@ -183,12 +176,12 @@ nav a:hover {
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-weight: 600;
-  min-width: auto;
-  width: 100%;
+  width: auto;
 }
 .transaction {
   border-radius: 10px;
   background-color:  #af4c4c;
+  width: auto;
 }
 
 .image-container {
@@ -198,7 +191,7 @@ nav a:hover {
 }
 
 .image-container img {
-  width: 30%;
+  width: 23%;
 }
 
 .about {
@@ -212,7 +205,7 @@ nav a:hover {
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-weight: 500;
-  width: 100%;
+  width: auto;
 }
 
 h2 {
@@ -235,13 +228,13 @@ h0 {
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-weight: 600;
-  width: 100%;
+  width: auto;
 }
 
 #transactions {
   border-radius: 40px;
   color:  #af4c4c;
-  width: 100%;
+  width: auto;
   
 }
 
