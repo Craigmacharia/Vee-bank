@@ -6,9 +6,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  min-height: vh;
   margin: 0;
-  width: fit-content;
+  width: 100%;
 }
 
 header {
@@ -31,7 +31,7 @@ h1 {
   padding: 10px;
   border-radius: 50px;
   margin: 20px 0;
-  width: 95%;
+  width: 100%;
   text-align: center;
   color: #eee;
 }
@@ -62,7 +62,7 @@ h1 {
 }
 
 input[type="number"] {
-  width: 50%;
+  width: 60%;
   padding: 10px;
   border: none;
   border-radius: 9px;
@@ -90,14 +90,12 @@ button:hover {
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
-  width: 62%;
+  width: 100%;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   color: #eee;
   margin-bottom: 70px;
   margin-top: 10px;
-  margin-right: 1%;
-  margin-left: 10%;
 }
 
 nav {
@@ -130,7 +128,7 @@ nav a:hover {
 }
 
 .transactions-table {
-  width: 93%;
+  width: 100%;
   margin: 20px 20px;
   padding: 20px 10px;
   border-radius: 100px;
@@ -185,6 +183,8 @@ nav a:hover {
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-weight: 600;
+  min-width: auto;
+  width: 100%;
 }
 .transaction {
   border-radius: 10px;
@@ -198,7 +198,7 @@ nav a:hover {
 }
 
 .image-container img {
-  width: 23%;
+  width: 30%;
 }
 
 .about {
@@ -212,6 +212,7 @@ nav a:hover {
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-weight: 500;
+  width: 100%;
 }
 
 h2 {
@@ -234,6 +235,7 @@ h0 {
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-weight: 600;
+  width: 100%;
 }
 
 #transactions {
