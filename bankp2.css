@@ -1,0 +1,282 @@
+
+body {
+  background-color: #222;
+  color: #eee;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #af4c4c;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.balance-container {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 20px 0;
+  width: 95%;
+  text-align: center;
+  color: #eee;
+}
+
+#balance {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.transactions-container {
+  display: flex;
+  width: 98%;
+  justify-content: center;
+}
+
+.transaction-column {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 95px;
+  width: 50%;
+  text-align: center;
+}
+
+.transaction-column h2 {
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: #eee;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+button {
+  background-color:  #af4c4c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:  rgb(145, 122, 122);
+}
+
+.home {
+  background-color: #af4c4c;
+  padding: 20px;
+  border-radius: 10px;
+  display: ;
+  margin: 20px 0;
+  width: 62%;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: #eee;
+  margin-bottom: 70px;
+  margin-top: 10px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+nav {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color:  #af4c4c;
+}
+
+.transactions-table {
+  width: 93%;
+  margin: 20px 20px;
+  padding: 20px 10px;
+  border-radius: 100px;
+  color: whitesmoke;
+}
+
+.transactions-table h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #444;
+  border-radius: 10px;
+}
+
+.transactions-table table {
+  width: 80%;
+  background-color:  #af4c4c;
+  border-radius: 10px;
+  margin-left: 10%;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin-left: 35%;
+}
+
+.carousel {
+  width: 96%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  display: none;
+  width: 33.33%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.carousel-item.active {
+  display: flex;
+  transform: translateX(0);
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+.image-container {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  top: 90%;
+  left: 113%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 17px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.funds {
+  background-color: yellow;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.contact {
+  background-color:  #af4c4c;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 80px;
+  padding: 20px 20px;
+  margin: 20px;
+  border-radius: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-weight: 600;
+}
+.transaction {
+  border-radius: 10px;
+  background-color:  #af4c4c;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color:#444;
+}
+
+.image-container img {
+  width: 23%;
+}
+
+.about {
+  background-color:  #af4c4c;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  margin: 20px;
+  border-radius: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: xx-large;
+}
+h0 {
+  font-size: x-large;
+  font-weight: 800;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.footer {
+  background-color:  #af4c4c;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 80px;
+  padding: 20px 20px;
+  margin: 20px;
+  border-radius: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-weight: 600;
+}
