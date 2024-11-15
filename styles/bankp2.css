@@ -8,6 +8,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  width: fit-content;
 }
 
 header {
@@ -88,7 +89,6 @@ button:hover {
   background-color: #af4c4c;
   padding: 20px;
   border-radius: 10px;
-  display: flex;
   margin: 20px 0;
   width: 62%;
   text-align: center;
@@ -97,7 +97,7 @@ button:hover {
   margin-bottom: 70px;
   margin-top: 10px;
   margin-right: 1%;
-  margin-left: 1%;
+  margin-left: 10%;
 }
 
 nav {
@@ -145,58 +145,12 @@ nav a:hover {
 }
 
 .transactions-table table {
-  width: 80%;
+  width: 100%;
   background-color:  #af4c4c;
   border-radius: 10px;
   margin-left: 10%;
 }
 
-.carousel-container {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  text-align: center;
-  display: block;
-  margin-left: 35%;
-}
-
-.carousel {
-  width: 96%;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel-item {
-  display: none;
-  width: 33.33%;
-  transition: transform 0.2s ease-in-out;
-}
-
-.carousel-item.active {
-  display: flex;
-  transform: translateX(0);
-}
-
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
 
 
 .image-container {
@@ -288,4 +242,10 @@ h0 {
   color:  #af4c4c;
   width: 100%;
   
+}
+
+
+
+@media (max-width: 768px) {
+
 }
