@@ -34,19 +34,51 @@
         <img src="https://tse1.mm.bing.net/th?id=OIG1.wEUnxyQ9wMMk86MOK3Ft&pid=ImgGn" alt="Image 3">
         <div class="image-text">Main Branch, Lavington</div>
       </div>
-
           <div class="home">
           <h2>A/C HOLDER</h2> 
           <p>Name: Craig Macharia</p>
           <p>A/C NO: 0110928039</p>
           <p>Branch: Lavington</p> 
-        </div> 
+        </div>
+        
+        <h1>Registration</h1>
+        <section id="registration">
+        <form id="registration-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+      
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+      
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="accountNo">Account Number:</label>
+          <input type="text" id="accountNo" name="accountNo" required>
+      
+          <label for="branch">Branch:</label>
+          <input type="text" id="branch" name="branch" required>
+      
+          <button type="submit">Register</button>
+        </form> 
+        </section>
+        <h1>Login</h1>
+
+        <form id="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+      
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+      
+          <button type="submit">Login</button>
+        </form>
       </section>
 
     <section id="funds"> 
       <div class="balance-container">
-        <h2>FUNDS</h2>
-        <p>Balance: <span id="balance">0.00</span></p>
+        <h4>BALANCE</h4>
+        <p><span id="balance">0.00</span></p>
       </div>
     </section>
 
@@ -55,13 +87,13 @@
         <div class="transaction-column deposit">
           <h2>Deposit</h2>
           <input type="number" id="deposit-amount" placeholder="Enter amount">
-          <button id="deposit-button">Submit</button>
+          <button id="deposit-button">DEPOSIT</button>
         </div>
 
         <div class="transaction-column withdrawal">
           <h2>Withdraw</h2>
           <input type="number" id="withdrawal-amount" placeholder="Enter amount">
-          <button id="withdrawal-button">Submit</button>
+          <button id="withdrawal-button">WITHDRAW</button>
         </div>
       </div>
 
@@ -110,17 +142,7 @@
     </div>
   </section>
   </main>
-  <h1>Vee Bank Login</h1>
 
-  <form id="login-form">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-
-    <button type="submit">Login</button>
-  </form>
 
   <script src="bankp2.js"></script> 
 </body>

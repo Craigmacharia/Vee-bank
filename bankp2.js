@@ -185,3 +185,9 @@ registrationForm.addEventListener('submit', (event) => {
   window.location.href = 'login.html'; 
 });
 
+
+
+
+
+
+
