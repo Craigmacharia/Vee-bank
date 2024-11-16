@@ -268,7 +268,7 @@ h0 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: auto;
+  width: 100%;
   transition: transform 0.5s ease-in-out;
   transform: translateX(0);
   opacity: 1;
