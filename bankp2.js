@@ -110,3 +110,78 @@ startAutoPlay();
 const carouselContainer = document.querySelector(".carousel-container");
 carouselContainer.addEventListener("mouseover", stopAutoPlay);
 carouselContainer.addEventListener("mouseout", startAutoPlay);
+
+
+
+const loginForm = document.getElementById('login-form');
+loginForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  
+  const storedUsers = localStorage.getItem('users');
+  if (storedUsers) {
+    const users = JSON.parse(storedUsers);
+    const user = users.find(u => u.username === username && u.password === password);
+
+    if (user) {
+      
+      localStorage.setItem('loggedInUser', JSON.stringify(user));
+
+     
+      window.location.href = 'index.html'; 
+    } else {
+      alert('Invalid username or password. Please register first.'); 
+    }
+  } else {
+    alert('No users registered yet. Please register first.'); 
+  }
+});
+
+
+const registrationForm = document.getElementById('registration-form'); 
+registrationForm.addEventListener('submit', (event) => {
+  event.preventDefault(); 
+
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+  const name = document.getElementById('name').value;
+  const accountNo = document.getElementById('accountNo').value;
+  const branch = document.getElementById('branch').value;
+
+  
+  let users = []; 
+  const storedUsers = localStorage.getItem('users'); 
+  if (storedUsers) {
+    users = JSON.parse(storedUsers);
+  }
+
+  
+  const existingUser = users.find(u => u.username === username); 
+  if (existingUser) {
+    alert('Username already exists');
+    return;
+  }
+
+  
+  const newUser = {
+    username,
+    password,
+    name,
+    accountNo,
+    branch
+  };
+
+  
+  users.push(newUser);
+
+  
+  localStorage.setItem('users', JSON.stringify(users));
+
+  
+  alert('Registration successful! You can now login.'); 
+  window.location.href = 'login.html'; 
+});
+
