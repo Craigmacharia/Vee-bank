@@ -254,7 +254,7 @@ h0 {
 
 
 .carousel-container {
-  width: 50%; 
+  width: auto; 
   margin: 20px auto;
 }
 
@@ -268,7 +268,7 @@ h0 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: auto%;
   transition: transform 0.5s ease-in-out;
   transform: translateX(0);
   opacity: 1;
