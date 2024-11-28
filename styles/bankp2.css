@@ -111,7 +111,7 @@ button:hover {
 
 nav {
   background-color: black;
-  padding: 10px;
+  padding: 0px;
   text-align: center; 
   position: relative;
   width: auto; 
@@ -123,7 +123,7 @@ nav {
 
 nav ul {
   list-style: none;
-  width: 100%;
+  width: auto;
 }
 
 nav li {
