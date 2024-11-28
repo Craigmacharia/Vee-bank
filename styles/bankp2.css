@@ -474,11 +474,19 @@ h7{
   text-align: center;
 }
 .text {
-  color: black;
+  color: white;
   position: relative;
   text-align: center;
   font-size: xx-large;
   margin-bottom: 10px;
   font-weight: 700;
-  font-family: cursive;
+}
+
+
+h8{
+  color: #af4c4c;
+  font-size: xx-large;
+  padding: 4px 3px;
+  border-radius: 10px;
+  background-color: black;
 }
