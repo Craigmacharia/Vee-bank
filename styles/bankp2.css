@@ -175,11 +175,11 @@ nav a:hover {
 .contact {
   background-color:  #af4c4c;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 80px;
   margin-bottom: 80px;
   padding: 20px 20px;
   margin: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-weight: 600;
