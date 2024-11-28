@@ -127,7 +127,7 @@ nav ul {
 }
 
 nav li {
-  display: inline-block;
+  display: inline-flex;
   margin: 0 10px;
   width: auto;
 }
@@ -429,12 +429,6 @@ h4 {
   font-weight: 999;
   font-size: xx-large;
 }
-
-
-
-
-
-
 
 .transactions-container {
   display: flex;
