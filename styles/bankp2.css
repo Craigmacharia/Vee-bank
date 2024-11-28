@@ -8,14 +8,15 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  width: auto;
+  width: 100%;
   padding: 0;
+  max-width: 100%;
 }
 
 header {
   background-color: #333;
   padding: 20px;
-  width: 100%;
+  width: auto;
   text-align: center;
 }
 
@@ -25,7 +26,7 @@ h1 {
   color: #af4c4c;
   font-weight: bold;
   font-family: cursive;
-  width: auto;
+  width: 100%;
 }
 
 .balance-container {
@@ -41,20 +42,21 @@ h1 {
 #balance {
   font-size: 3em;
   font-weight: bold;
+  width: auto;
 }
 
 .transactions-container {
   display: flex;
   width: auto;
   justify-content: center;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 .transaction-column {
   background-color: #333;
   padding: 5px;
   border-radius: 50px;
-  width: 100%;
+  width: auto;
   height: auto;
   text-align: center;
   border-color: #af4c4c;
@@ -91,7 +93,7 @@ button:hover {
   background-color:  rgb(145, 122, 122);
 }
 
-.home {
+#home {
   background-color: #af4c4c;
   padding: 20px;
   border-radius: 10px;
@@ -111,7 +113,7 @@ nav {
   padding: 10px;
   text-align: center;
   position: relative;
-  width: auto;
+  width: 100%;
   border: 1px solid #af4c4c;
 }
 
@@ -131,12 +133,12 @@ nav a {
   color: white;
   padding: 8px 8px;
   border-radius: 10px;
-  width: auto;
+  width: 100%;
 }
 
 nav a:hover {
   background-color:  #af4c4c;
-  width: auto;
+  width: 100%;
 }
 
 .transactions-table {
@@ -152,7 +154,7 @@ nav a:hover {
   text-align: center;
   background-color: #444;
   border-radius: 10px;
-  width: auto;
+  width: 100%;
   border: 1px solid #af4c4c;
 }
 
@@ -190,6 +192,7 @@ nav a:hover {
   display: flex;
   justify-content: space-evenly;
   background-color:#444;
+  width: auto;
 }
 
 .image-container img {
@@ -268,7 +271,6 @@ h2 {
   transform: translateX(0);
   opacity: 1;
   background-color: #af4c4c;
-  position: relative;
 }
 
 .carousel-item img {
@@ -282,6 +284,7 @@ h2 {
   font-size: 1.2em; 
   color: #eee;
   font-family: cursive;
+  width: auto;
 }
 
 @media (max-width: 768px) { 
@@ -306,6 +309,7 @@ h2 {
   cursor: pointer;
   font-size: 20px;
   z-index: 10;
+  width: auto;
 }
 
 .prev {
@@ -420,4 +424,57 @@ h4 {
   color: white;
   font-weight: 999;
   font-size: xx-large;
+}
+
+
+
+
+
+
+
+.transactions-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: auto;
+}
+
+.transaction-column {
+  background-color: #af4c4c;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+input[type="number"] {
+  width: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+h7{
+  color: black;
+  text-align: center;
+}
+.text {
+  color: black;
+  position: relative;
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: cursive;
 }
