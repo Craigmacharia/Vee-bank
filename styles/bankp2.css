@@ -486,7 +486,9 @@ h7{
 h8{
   color: #af4c4c;
   font-size: xx-large;
-  padding: 4px 3px;
+  padding: 4px 4px;
   border-radius: 10px;
   background-color: black;
+  text-align: center;
+  align-items: center;
 }
