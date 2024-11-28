@@ -8,7 +8,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  width: auto;
+  width: 100%;
   padding: 0;
 }
 
@@ -30,7 +30,7 @@ h1 {
 
 .balance-container {
   background-color: #af4c4c;
-  padding: 10px;
+  padding: 11px;
   border-radius: 50px;
   margin: 20px 0;
   text-align: center;
@@ -47,7 +47,7 @@ h1 {
   display: flex;
   width: auto;
   justify-content: center;
-  border-radius: 80px;
+  border-radius: 40px;
 }
 
 .transaction-column {
@@ -67,10 +67,10 @@ h1 {
 }
 
 input[type="number"] {
-  width: 50%;
+  width: auto;
   padding: 10px;
   border: none;
-  border-radius: 9px;
+  border-radius: 100px;
   background-color: #444; 
   color: #eee;
   margin-bottom: 10px;
@@ -105,14 +105,14 @@ nav {
   background-color: black;
   padding: 10px;
   text-align: center;
+  position: relative;
+  display: inline-flex;
   width: auto;
   border: 1px solid #af4c4c;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   width: auto;
 }
 
@@ -125,13 +125,14 @@ nav li {
 nav a {
   text-decoration: none;
   color: white;
-  padding: 8px 12px;
-  border-radius: 5px;
+  padding: 8px 8px;
+  border-radius: 10px;
   width: auto;
 }
 
 nav a:hover {
   background-color:  #af4c4c;
+  width: auto;
 }
 
 .transactions-table {
@@ -165,12 +166,7 @@ nav a:hover {
   width: auto;
 }
 
-.funds {
-  background-color: yellow;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  width: auto;
-}
+
 
 .contact {
   background-color:  #af4c4c;
@@ -183,11 +179,6 @@ nav a:hover {
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-weight: 600;
-  width: auto;
-}
-.transaction {
-  border-radius: 10px;
-  background-color:  #af4c4c;
   width: auto;
 }
 
@@ -219,7 +210,7 @@ h2 {
   font-size: xx-large;
   width: auto;
 }
-h0 {
+.h0 {
   font-size: x-large;
   font-weight: 800;
   font-family: 'Courier New', Courier, monospace;
@@ -255,31 +246,31 @@ h0 {
 
 .carousel-container {
   width: auto; 
-  margin: 20px auto;
+  margin: 1px auto;
 }
 
 .carousel {
-  position: relative;
+  position: center;
   overflow: hidden;
-  width: 100%;
+  width: auto;
 }
 
 .carousel-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: auto%;
-  transition: transform 0.5s ease-in-out;
+  width: auto;
+  transition: transform 0.3s ease-in-out;
   transform: translateX(0);
   opacity: 1;
   background-color: #af4c4c;
+  position: relative;
 }
 
 .carousel-item img {
   width: 100%;
-  height: auto;
   margin-bottom: 10px;
-  background-color: goldenrod;
+  margin-top: 10px;
 }
 
 .image-text {
