@@ -100,13 +100,16 @@ button:hover {
   font-family: 'Courier New', Courier, monospace;
   color: #eee;
 }
+.header {
+  text-align: center;
+  width: auto;
+}
 
 nav {
   background-color: black;
   padding: 10px;
   text-align: center;
   position: relative;
-  display: inline-flex;
   width: auto;
   border: 1px solid #af4c4c;
 }
