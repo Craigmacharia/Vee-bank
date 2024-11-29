@@ -113,80 +113,96 @@ carouselContainer.addEventListener("mouseout", startAutoPlay);
 
 
 
+
+
+const registrationForm = document.getElementById('registration-form');
 const loginForm = document.getElementById('login-form');
+const loginLink = document.getElementById('login-link');
+
+const customers = {
+  "Gathoni": {
+    password: "password1", 
+    balance: 0, 
+    transactions: []
+  },
+  "Craig": {
+    password: "password2", 
+    balance: 0, 
+    transactions: []
+  },
+  "Narah": {
+    password: "password3", 
+    balance: 0, 
+    transactions: []
+  }
+};
+
+registrationForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+
+  if (customers[username]) {
+    alert("Username already exists.");
+  } else { 
+    customers[username] = { 
+      password: password, 
+      balance: 0,
+      transactions: []
+    };
+    alert("Registration successful!");
+    registrationForm.style.display = 'none';
+    loginForm.style.display = 'block';
+  }
+});
+
+loginLink.addEventListener('click', (event) => {
+  event.preventDefault();
+  registrationForm.style.display = 'none';
+  loginForm.style.display = 'block'; 
+});
+
 loginForm.addEventListener('submit', (event) => {
   event.preventDefault();
-
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-  
-  const storedUsers = localStorage.getItem('users');
-  if (storedUsers) {
-    const users = JSON.parse(storedUsers);
-    const user = users.find(u => u.username === username && u.password === password);
-
-    if (user) {
-      
-      localStorage.setItem('loggedInUser', JSON.stringify(user));
-
-     
-      window.location.href = 'index.html'; 
-    } else {
-      alert('Invalid username or password. Please register first.'); 
-    }
+  if (customers[username] && customers[username].password === password) {
+    window.location.href = `customer.html?username=${username}`;
   } else {
-    alert('No users registered yet. Please register first.'); 
+    alert('Invalid username or password.');
   }
 });
 
 
-const registrationForm = document.getElementById('registration-form'); 
-registrationForm.addEventListener('submit', (event) => {
-  event.preventDefault(); 
-
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
-  const name = document.getElementById('name').value;
-  const accountNo = document.getElementById('accountNo').value;
-  const branch = document.getElementById('branch').value;
-
-  
-  let users = []; 
-  const storedUsers = localStorage.getItem('users'); 
-  if (storedUsers) {
-    users = JSON.parse(storedUsers);
-  }
-
-  
-  const existingUser = users.find(u => u.username === username); 
-  if (existingUser) {
-    alert('Username already exists');
-    return;
-  }
-
-  
-  const newUser = {
-    username,
-    password,
-    name,
-    accountNo,
-    branch
-  };
-
-  
-  users.push(newUser);
-
-  
-  localStorage.setItem('users', JSON.stringify(users));
-
-  
-  alert('Registration successful! You can now login.'); 
-  window.location.href = 'login.html'; 
-});
 
 
 
+
+const urlParams = new URLSearchParams(window.location.search);
+const username = urlParams.get('username'); 
+
+
+const customerDetails = document.getElementById('customer-details');
+
+
+if (customers[username]) {
+  customerDetails.innerHTML = `
+    <h2>Welcome, ${username}</h2>
+    <p>Current Balance: $${customers[username].balance}</p>
+    <h3>Transactions:</h3>
+    <ul>
+      ${customers[username].transactions.map((transaction, index) => `<li key="${index}">${transaction}</li>`).join('')}
+    </ul>
+    <button id="deposit-button">Deposit</button>
+    <button id="withdrawal-button">Withdraw</button>
+  `;
+
+ 
+} else {
+  alert('Invalid username.');
+}
 
 
 
