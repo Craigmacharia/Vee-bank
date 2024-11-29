@@ -36,5 +36,11 @@ function RegistrationForm() {
     </div>
   );
 }
+// ... (Inside RegistrationForm.jsx)
+const handleSubmit = (event) => {
+    event.preventDefault();
+    // ... (Handle registration logic)
+    localStorage.setItem('customers', JSON.stringify(customers)); // Store in localStorage
+  };
 
 export default RegistrationForm;
