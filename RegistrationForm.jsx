@@ -6,7 +6,7 @@ function RegistrationForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle registration logic (e.g., validate data, store in local storage)
+    
     console.log("Username:", username, "Password:", password);
   };
 
@@ -36,10 +36,9 @@ function RegistrationForm() {
     </div>
   );
 }
-// ... (Inside RegistrationForm.jsx)
 const handleSubmit = (event) => {
     event.preventDefault();
-    // ... (Handle registration logic)
+    
     localStorage.setItem('customers', JSON.stringify(customers)); // Store in localStorage
   };
 
